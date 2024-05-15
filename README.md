@@ -12,7 +12,7 @@ gtkで作成したじゃんけんゲーム
 
 ## ⬇️ インストール
 ```bash
-go install 
+go install github.com/PenguinCabinet/Open-Janken-gtk@latest
 ```
 
 

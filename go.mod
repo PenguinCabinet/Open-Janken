@@ -1,4 +1,4 @@
-module open-janken-gtk
+module github.com/PenguinCabinet/Open-Janken-gtk
 
 go 1.19
 
