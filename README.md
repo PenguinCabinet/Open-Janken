@@ -4,7 +4,7 @@
 
 ![img](/img/output.gif)
 
-gtkで作成したじゃんけんゲーム
+GTKを使ったじゃんけんゲーム
 
 <br>
 <br>
