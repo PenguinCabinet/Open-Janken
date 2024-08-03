@@ -32,7 +32,7 @@ const (
 )
 
 var (
-	Hand_strs = []string{"グー", "チョキ", "パー"}
+	Hand_strs = []string{"✊", "✌", "🖐"}
 )
 
 type Hand_with_Label_t struct {
@@ -118,10 +118,12 @@ func main() {
 	vbox1 := gtk.NewVBox(true, 1)
 
 	Enemy_img := gtk.NewLabel("")
+  Enemy_img.ModifyFontEasy("25")
 	Enemy.Label = Enemy_img
 	Enemy.Update(Hand_gu)
 
 	My_img := gtk.NewLabel("")
+  My_img.ModifyFontEasy("25")
 	Player.Label = My_img
 	Player.Update(Hand_gu)
 
@@ -130,8 +132,10 @@ func main() {
 	var Hand_buttons []*gtk.Button
 	for hand, v := range Hand_strs {
 		button := gtk.NewButton()
-		button.Add(gtk.NewLabel(v))
-		temp := hand
+    l := gtk.NewLabel(v)
+    l.ModifyFontEasy("25")
+		button.Add(l)
+    temp := hand
 		button.Clicked(func() {
 			if Game_Status == Game_lock {
 				return

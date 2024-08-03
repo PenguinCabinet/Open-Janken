@@ -2,7 +2,7 @@
 
 # ✌ open-janken-gtk
 
-![img](/img/output.gif)
+![img](/img/output.png)
 
 GTKを使ったじゃんけんゲーム
 
